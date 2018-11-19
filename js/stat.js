@@ -1,3 +1,4 @@
+'use strict'
 var CLOUD_WIDTH = 420;
 var CLOUD_HEIGHT = 270;
 var CLOUD_X = 100;
@@ -41,7 +42,7 @@ window.renderStatistics = function (ctx, names, times) {
   for (var i = 0; i < names.length; i++) {
     if (names[i] === 'Вы') {
       ctx.fillStyle = 'rgba(255, 0, 0, 1)';
-    }else {
+    } else {
       ctx.fillStyle = 'rgba(0, 0, 255, 0)';
     }
     ctx.fillText(names[i], BAR_X + (BAR_WIDTH + BAR_GAP) * i, BAR_Y);
